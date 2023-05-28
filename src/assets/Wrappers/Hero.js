@@ -4,7 +4,6 @@ const Wrapper = styled.section`
   height: 100vh;
   scroll-snap-align: center;
   line-height: normal;
-  scroll-snap-type: mandatory;
 
   h1 {
     text-align: center;
