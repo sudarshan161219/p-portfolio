@@ -159,3 +159,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}

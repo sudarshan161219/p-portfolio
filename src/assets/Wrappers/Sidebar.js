@@ -8,7 +8,7 @@ const Wrapper = styled.div`
     font-family: "Lato", sans-serif;
     font-family: "Oswald", sans-serif;
   }
-
+  -webkit-tap-highlight-color: transparent;
   .wrapper {
     position: fixed;
     top: 0;
