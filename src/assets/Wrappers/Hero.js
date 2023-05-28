@@ -31,9 +31,16 @@ const Wrapper = styled.section`
     gap: 1rem;
   }
 
+  .img-info {
+    z-index: -1;
+    order: -1;
+    display: grid;
+    justify-content: center;
+  }
+
   .hero-img {
-    display: none;
-    width: 100%;
+    /* display: none; */
+    width: 280px;
     animation: animate 2s infinite ease alternate;
   }
 
@@ -45,13 +52,13 @@ const Wrapper = styled.section`
 
   .bn632-hover {
     justify-self: center;
-    width: 160px;
+    width: 250px;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     font-family: "Titillium Web", sans-serif;
     color: #fff;
-
+    margin-top: 0.7rem;
     height: 40px;
     text-align: center;
     border: none;
@@ -88,6 +95,10 @@ const Wrapper = styled.section`
     box-shadow: 0 4px 15px 0 rgba(88, 39, 245, 0.52);
   }
   @media (min-width: 1024px) {
+    .img-info {
+    order: 1;
+  }
+
     h1,
     p {
       text-align: left;

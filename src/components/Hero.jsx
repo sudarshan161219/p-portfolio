@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="info-3d-container">
         <div className="info">
           <h1>
-            Hi, I am Sudarshan, <br /> Web Developer{" "}
+            Hi, I am Sudarshan, <br /> Web Developer
           </h1>
           <p>
             I build beautiful websites and web apps for businesses around the
