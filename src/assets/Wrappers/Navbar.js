@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 const Wrapper = styled.header`
-  /* position: fixed;
-  top: 17px; */
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  margin-bottom: 2rem;
   .logo-img {
     width: 110px;
   }
