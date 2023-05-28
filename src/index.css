@@ -148,7 +148,7 @@ body {
   /* font-family: 'Roboto Condensed', sans-serif; */
   /* font-family: 'Titillium Web', sans-serif; */
   line-height: 1;
-  margin: 1rem;
+  margin: 1rem  1rem  0 1rem;
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;

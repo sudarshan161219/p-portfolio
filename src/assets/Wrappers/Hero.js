@@ -32,7 +32,15 @@ const Wrapper = styled.section`
   }
 
   .hero-img {
+    display: none;
     width: 100%;
+    animation: animate 2s infinite ease alternate;
+  }
+
+  @keyframes animate {
+    to {
+      transform: translateY(30px);
+    }
   }
 
   .bn632-hover {
@@ -90,6 +98,7 @@ const Wrapper = styled.section`
 
     .hero-img {
       width: 400px;
+      display: block;
     }
 
     .info-3d-container {
@@ -102,7 +111,7 @@ const Wrapper = styled.section`
 
   @media (min-width: 1366px) {
     .hero-img {
-      width: 500px;
+      width: 490px;
     }
     .info {
       width: 600px;
