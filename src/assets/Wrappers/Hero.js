@@ -4,7 +4,8 @@ const Wrapper = styled.section`
   height: 100vh;
   scroll-snap-align: center;
   line-height: normal;
-
+  display: grid;
+  justify-content: space-between;
   h1 {
     text-align: center;
     font-size: 2.8rem;
@@ -27,7 +28,7 @@ const Wrapper = styled.section`
   .info-3d-container {
     display: grid;
     align-items: center;
-    gap: 1rem;
+    /* gap: 1rem; */
   }
 
   .img-info {
@@ -45,7 +46,7 @@ const Wrapper = styled.section`
 
   @keyframes animate {
     to {
-      transform: translateY(30px);
+      transform: translateY(25px);
     }
   }
 
@@ -94,9 +95,10 @@ const Wrapper = styled.section`
     box-shadow: 0 4px 15px 0 rgba(88, 39, 245, 0.52);
   }
   @media (min-width: 1024px) {
+    display: block;
     .img-info {
-    order: 1;
-  }
+      order: 1;
+    }
 
     h1,
     p {
@@ -121,7 +123,7 @@ const Wrapper = styled.section`
 
   @media (min-width: 1366px) {
     .hero-img {
-      width: 490px;
+      width: 450px;
     }
     .info {
       width: 600px;

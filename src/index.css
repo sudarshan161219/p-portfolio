@@ -167,3 +167,16 @@ select,
 a {
     -webkit-tap-highlight-color: transparent;
 }
+
+
+h1, h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #eeeeee;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #d6d6d6;
+}

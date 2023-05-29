@@ -1,12 +1,11 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/Hero";
-import Navbar from "./Navbar";
-import moon from "../../public/img/moon.png";
+import svg1 from "../../public/img/svg-1-1.svg"
+import Navbar from "../components/Navbar"
 
 const Hero = () => {
   return (
     <Wrapper>
-      <Navbar />
       <div className="info-3d-container">
         <div className="info">
           <h1>
@@ -20,7 +19,8 @@ const Hero = () => {
           <button className="bn632-hover bn22">Get In Touch</button>
         </div>
         <div className="img-info">
-          <img className="hero-img" src={moon} alt="moon" />
+          {/* <img className="hero-img" src={moon} alt="moon" /> */}
+          <img className="hero-img" src={svg1} alt="moon" />
         </div>
       </div>
     </Wrapper>
