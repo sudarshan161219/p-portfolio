@@ -1,17 +1,19 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/About";
-import svg2 from "../../public/img/svg-2.svg";
+// import svg2 from "../../public/img/svg-2.svg";
+import svg3 from "/img/svg-3.svg";
 const About = () => {
   return (
     <Wrapper>
-      <div className="mobile-conyainer">
+      {/* mobile */}
+      <div className="mobile-container">
         <div className="heading-container">
           <h2>What I do</h2>
         </div>
 
         <div className="img-info-container">
           <div className="img-info">
-            <img className="about-img" src={svg2} alt="developer" />
+            <img className="about-img" src={svg3} alt="developer" />
           </div>
           <div className="para-container">
             <strong>Delevoper</strong>
@@ -22,6 +24,25 @@ const About = () => {
               that standard.
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Desktop */}
+      <div className="desktop-container">
+        <div className="about-info-container">
+          <h2>What I do</h2>
+          <div className="span">
+            <strong>  Delevoper</strong>
+            <p>
+              I develop beautiful and powerful websites for modern businesses.
+              Any business today needs a website that wins customers’ trust and
+              helps you do your business well. I make sure your website is up to
+              that standard.
+            </p>
+          </div>
+        </div>
+        <div className="img-info">
+          <img className="about-img" src={svg3} alt="developer" />
         </div>
       </div>
     </Wrapper>

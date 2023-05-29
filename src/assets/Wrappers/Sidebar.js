@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     font-family: "Oswald", sans-serif;
   }
   -webkit-tap-highlight-color: transparent;
-  .wrapper {
+  .sidebar{
     position: fixed;
     top: 0;
     right: -105%;
@@ -22,10 +22,43 @@ const Wrapper = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.6s ease-in-out;
   }
-  #active:checked ~ .wrapper {
-    /*left: 0;*/
+
+  .open-sidebar{
     right: 0;
   }
+
+  .list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+  }
+  .list  li {
+    height: 10%;
+    margin: 15px 0;
+  }
+  .list  li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  .list  li a:hover:after {
+    transform: scaleY(1);
+  }
+  .list  li a:hover {
+    color: #1a73e8;
+  }
+
   .menu-btn {
     position: absolute;
     z-index: 2;
@@ -81,80 +114,22 @@ const Wrapper = styled.div`
     border-color: #fff;
   }
 
-  /* #active:checked + .menu-btn {
-    background-color: #000;
-  } */
 
-  .wrapper ul {
-    display: grid;
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    list-style: none;
-    text-align: center;
-  }
-  .wrapper ul li {
-    height: 10%;
-    margin: 15px 0;
-  }
-  .wrapper ul li a {
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 500;
-    padding: 5px 30px;
-    color: #fff;
-    border-radius: 50px;
-    position: absolute;
-    margin: 5px 30px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  .wrapper ul li a:hover:after {
-    transform: scaleY(1);
-  }
-  .wrapper ul li a:hover {
-    color: #1a73e8;
-  }
   input[type="checkbox"] {
     display: none;
   }
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    text-align: center;
-    width: 100%;
-    color: #202020;
-  }
-  .content .title {
-    font-size: 40px;
-    font-weight: 700;
-  }
-  .content p {
-    font-size: 35px;
-    font-weight: 600;
-  }
 
-  #active:checked ~ .wrapper ul li a {
+
+
+  .list li a {
     opacity: 1;
   }
-  .wrapper ul li a {
+  /* .list li a {
     transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translateX(100px);
-  }
-  #active:checked ~ .wrapper ul li a {
-    transform: none;
-    transition-timing-function: ease, cubic-bezier(0.1, 1.3, 0.3, 1); /* easeOutBackを緩めた感じ */
-    transition-delay: 0.6s;
-    transform: translateX(-100px);
-  }
+  } */
+ 
+
 `;
 
 export default Wrapper;
