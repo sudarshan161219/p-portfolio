@@ -28,7 +28,6 @@ const Wrapper = styled.section`
   .info-3d-container {
     display: grid;
     align-items: center;
-    /* gap: 1rem; */
   }
 
   .img-info {

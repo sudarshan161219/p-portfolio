@@ -1,9 +1,13 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/Hero";
 import svg1 from "/img/svg-1-1.svg";
-import Navbar from "../components/Navbar";
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+
+const Hero = () => {
+
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const handleEvent = (e) => {
   let iterations = 0;
   const interval = setInterval(() => {
@@ -25,7 +29,6 @@ const handleEvent = (e) => {
   }, 30);
 };
 
-const Hero = () => {
   return (
     <Wrapper>
       <div className="info-3d-container">
@@ -46,7 +49,6 @@ const Hero = () => {
           <button className="bn632-hover bn22">Get In Touch</button>
         </div>
         <div className="img-info">
-          {/* <img className="hero-img" src={moon} alt="moon" /> */}
           <img className="hero-img" src={svg1} alt="moon" />
         </div>
       </div>

@@ -1,34 +1,32 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
+import { AiOutlineClose } from "react-icons/ai";
 import Wrapper from "../assets/Wrappers/Sidebar";
+
 const Sidebar = () => {
-  const [name, setName] = useState(false);
+  const [click, setClick] = useState(false);
 
-  const handleChange = () => {
-    setName(!name);
+  const handleClick = () => {
+    setClick(!click);
   };
-
-  console.log(name);
-
   return (
     <Wrapper>
-      <input onChange={handleChange} type="checkbox" id="active" />
-      <label htmlFor="active" className="menu-btn">
-        <span></span>
-      </label>
-      <label htmlFor="active" className="close"></label>
-
-      <div className={name ? "sidebar open-sidebar" : "sidebar"}>
+      <div className={click ? "menu-btn rotate" : "menu-btn"}>
+        <CiMenuFries onClick={handleClick} className="menu-icon" />
+        <AiOutlineClose onClick={handleClick} className="menu-icon" />
+      </div>
+      <div className={click ? "sidebar open-sidebar" : "sidebar"}>
         <ul className="list">
-          <li>
+          <li onClick={handleClick}>
             <a href="#">Home</a>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <a href="#">About</a>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <a href="#">Projects</a>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <a href="#">Contact</a>
           </li>
         </ul>
