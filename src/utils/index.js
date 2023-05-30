@@ -1,7 +1,7 @@
-import mongoDb from "../../public/tech-icons/mongodb-icon.png"
-import express from "../../public/tech-icons/express-js-icon.png"
-import react from "../../public/tech-icons/react-js-icon.png"
-import nodejs from "../../public/tech-icons/node-js.png"
+import mongoDb from "/tech-icons/mongodb-icon.png"
+import express from "/tech-icons/express-js-icon.png"
+import react from "/tech-icons/react-js-icon.png"
+import nodejs from "/tech-icons/node-js.png"
 
 const projectz = [
   {
