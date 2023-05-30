@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/Navbar";
-import logo from "../../public/img/logo.png";
+import logo from "/img/logo.png";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
