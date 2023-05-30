@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+  display: grid;
+  gap: 2rem;
   h3 {
     text-align: center;
     font-size: 2rem;
@@ -70,7 +72,7 @@ const Wrapper = styled.section`
 
   .links > a {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 0.8rem;
     color: #eeeeee;
     text-decoration: none;
@@ -86,8 +88,6 @@ const Wrapper = styled.section`
   @media (min-width: 1024px) {
     display: none;
   }
-
-
 `;
 
 export default Wrapper;

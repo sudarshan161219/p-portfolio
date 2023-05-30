@@ -64,9 +64,6 @@ const Wrapper = styled.section`
     display: none;
   }
 
-  /* @media (min-width: ) {
-    
-  } */
 
   @media (min-width: 1024px) {
     display: block;

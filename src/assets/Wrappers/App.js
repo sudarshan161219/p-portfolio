@@ -3,7 +3,6 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   height: 100vh;
   color: #eeeeee;
-  background: url("/img/bg-2.svg");
   background-size: cover;
   scroll-snap-type: mandatory;
   scroll-behavior: smooth;

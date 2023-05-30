@@ -24,8 +24,8 @@ const Mobile = () => {
               <div className="stack-container">
                 <span>Tech stack used in this project</span>
                 <div className="tech-stack-container">
-                  {item.techstack.map((imgs) => (
-                    <img className="tech-img" src={imgs} alt="tech stack" />
+                  {item.techstack.map((imgs, idx) => (
+                    <img  key={idx} className="tech-img" src={imgs} alt="tech stack" />
                   ))}
                 </div>
               </div>

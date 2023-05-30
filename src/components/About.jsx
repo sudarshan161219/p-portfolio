@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/About";
-// import svg2 from "../../public/img/svg-2.svg";
 import svg3 from "/img/svg-3.svg";
+
 const About = () => {
   return (
     <Wrapper>
