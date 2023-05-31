@@ -30,15 +30,27 @@ const Desktop = () => {
               </div>
 
               <div className="links">
-                <a href="">Source Code<FiGithub className="link-icon" /></a>   
-             <a href="">Live Site<FiLink2 className="link-icon" /></a>   
+  
 
-                {/* <li class="icon github">
-                  <span class="tooltip">Github</span>
-                  <span>
-                    <i class="fab fa-github"></i>
+                <button class="button">
+                  <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <a className="button_text" href="">
+                      Source Code
+                      <FiGithub className="link-icon" />
+                    </a>
                   </span>
-                </li> */}
+                </button>
+
+                <button class="button">
+                  <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <a className="button_text" href="">
+                      Live Site
+                      <FiLink2 className="link-icon" />
+                    </a>
+                  </span>
+                </button>
               </div>
             </div>
             <div className="project-img-container">
