@@ -85,6 +85,13 @@ const Wrapper = styled.section`
     border-top: 1px solid #eeeeee;
   }
 
+  @media (min-width: 768px) {
+    .works-projects-info-container{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
   @media (min-width: 1024px) {
     display: none;
   }

@@ -179,4 +179,6 @@ p {
   text-align: center;
   font-size: 1.2rem;
   color: #d6d6d6;
+  line-height: 180%;
+  font-weight: normal;
 }

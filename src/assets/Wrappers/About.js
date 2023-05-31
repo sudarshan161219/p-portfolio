@@ -64,7 +64,6 @@ const Wrapper = styled.section`
     display: none;
   }
 
-
   @media (min-width: 1024px) {
     display: block;
     height: 80vh;
@@ -84,6 +83,7 @@ const Wrapper = styled.section`
     strong,
     p {
       text-align: left;
+      line-height: 180%;
     }
 
     .about-info-container > h2 {
