@@ -1,9 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import Wrapper from "../assets/Wrappers/Sidebar";
-
-const Sidebar = () => {
+import { Link } from "react-router-dom";
+import Contact from "./Contact";
+const Sidebar = ({ scrollToSection}) => {
+  const home = useRef(null)
+  const about = useRef(null)
+  const project = useRef(null)
+  const contact = useRef(null)
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -18,16 +23,24 @@ const Sidebar = () => {
       <div className={click ? "sidebar open-sidebar" : "sidebar"}>
         <ul className="list">
           <li onClick={handleClick}>
-            <a href="#">Home</a>
+            <a href="#" onClick={() => scrollToSection(home)}>
+              Home
+            </a>
           </li>
           <li onClick={handleClick}>
-            <a href="#">About</a>
+            <a href="#" onClick={() => scrollToSection(about)}>
+              About
+            </a>
           </li>
           <li onClick={handleClick}>
-            <a href="#">Projects</a>
+            <a href="#" onClick={() => scrollToSection(project)}>
+              Projects
+            </a>
           </li>
           <li onClick={handleClick}>
-            <a href="#">Contact</a>
+            <a href="#" onClick={() => scrollToSection(contact)}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>

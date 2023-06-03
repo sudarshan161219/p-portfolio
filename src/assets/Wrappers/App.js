@@ -17,7 +17,7 @@ const Wrapper = styled.div`
     margin: 0 auto;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1360px) {
     width: 1200px;
     margin: 0 auto;
   }

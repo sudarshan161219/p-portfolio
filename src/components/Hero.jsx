@@ -1,33 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import Wrapper from "../assets/Wrappers/Hero";
 import svg1 from "/img/svg-1-1.svg";
 
-
-
-
 const Hero = () => {
 
+
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const handleEvent = (e) => {
-  let iterations = 0;
-  const interval = setInterval(() => {
-    e.target.innerText = e.target.innerText
-      .split("")
-      .map((lettter, index) => {
-        if (index < iterations) {
-          return e.target.dataset.value[index];
-        }
+  const handleEvent = (e) => {
+    let iterations = 0;
+    const interval = setInterval(() => {
+      e.target.innerText = e.target.innerText
+        .split("")
+        .map((lettter, index) => {
+          if (index < iterations) {
+            return e.target.dataset.value[index];
+          }
 
-        return letters[Math.floor(Math.random() * 26)];
-      })
-      .join("");
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
 
-    if (iterations >= e.target.dataset.value.length) {
-      clearInterval(interval);
-    }
-    iterations += 1 / 3;
-  }, 30);
-};
+      if (iterations >= e.target.dataset.value.length) {
+        clearInterval(interval);
+      }
+      iterations += 1 / 3;
+    }, 30);
+  };
 
   return (
     <Wrapper>

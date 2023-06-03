@@ -99,9 +99,30 @@ const Wrapper = styled.section`
       display: grid;
       gap: 0.1rem;
     }
+
+    .heading-container {
+      position: relative;
+      display: flex;
+    }
+
+    .desktop-heading-underline {
+      position: absolute;
+      top: 25px;
+      left: 105px;
+      width: 80px;
+      height: 25px;
+      background: rgb(81, 76, 231);
+      background: linear-gradient(
+        90deg,
+        rgba(81, 76, 231, 1) 35%,
+        rgba(30, 16, 175, 1) 100%
+      );
+      opacity: 0.9;
+      z-index: -1;
+    }
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1360px) {
     .about-img {
       width: 450px;
     }

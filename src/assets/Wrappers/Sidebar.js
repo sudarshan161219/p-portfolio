@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gudea:wght@700&family=Oswald:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap');
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lato", sans-serif;
     font-family: "Oswald", sans-serif;
   }
 
@@ -39,10 +39,9 @@ const Wrapper = styled.div`
     justify-content: center;
     list-style: none;
     text-align: center;
+    gap:5rem;
   }
   .list li {
-    height: 10%;
-    margin: 15px 0;
   }
   .list li a {
     text-decoration: none;

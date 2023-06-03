@@ -4,11 +4,12 @@ import svg3 from "/img/svg-3.svg";
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper >
       {/* mobile */}
       <div className="mobile-container">
         <div className="heading-container">
           <h2>What I do</h2>
+          {/* <span className="mobile-heading-underline" ></span> */}
         </div>
 
         <div className="img-info-container">
@@ -30,7 +31,10 @@ const About = () => {
       {/* Desktop */}
       <div className="desktop-container">
         <div className="about-info-container">
+        <div className="heading-container">
           <h2>What I do</h2>
+          <span className="desktop-heading-underline" ></span>
+        </div>
           <div className="span">
             <strong>  Delevoper</strong>
             <p>

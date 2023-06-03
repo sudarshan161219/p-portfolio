@@ -120,7 +120,7 @@ const Wrapper = styled.section`
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1360px) {
     .hero-img {
       width: 450px;
     }
