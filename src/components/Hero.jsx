@@ -1,11 +1,9 @@
 import React, { forwardRef } from "react";
 import Wrapper from "../assets/Wrappers/Hero";
 import svg1 from "/img/svg-1-1.svg";
-import Contact from "./Contact";
+import Navbar from "../components/Navbar";
 
-const Hero= forwardRef((props, ref) => {
-
-
+const Hero = forwardRef((props, ref) => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const handleEvent = (e) => {
     let iterations = 0;
@@ -28,17 +26,13 @@ const Hero= forwardRef((props, ref) => {
     }, 30);
   };
 
-  const scrollToSection = (elementRef) =>{
-    // window.scrollTo({
-    // top: elementRef.current.offsetTop,
-    // behavior:'smooth'
-    // })
-    elementRef.current?.scrollIntoView({behavior: 'smooth' });
-  }
+  const scrollToSection = (elementRef) => {
+    elementRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
-    <Wrapper ref={ref} >
-      <div  className="info-3d-container">
+    <Wrapper ref={ref}>
+      <div className="info-3d-container">
         <div className="info">
           <h1>
             Hi, I am{" "}
@@ -53,7 +47,12 @@ const Hero= forwardRef((props, ref) => {
             If we are a good fit, <br /> I will give you a time and cost
             estimate.
           </p>
-          <button className="bn632-hover bn22" onClick={() => scrollToSection(props.contact)}>Get In Touch</button>
+          <button
+            className="bn632-hover bn22"
+            onClick={() => scrollToSection(props.contact)}
+          >
+            Get In Touch
+          </button>
         </div>
         <div className="img-info">
           <img className="hero-img" src={svg1} alt="moon" />

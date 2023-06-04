@@ -9,13 +9,14 @@ const About =  forwardRef((props, ref) => {
       <div className="mobile-container">
         <div className="heading-container">
           <h2>What I do</h2>
-          {/* <span className="mobile-heading-underline" ></span> */}
         </div>
 
-        <div className="img-info-container">
-          <div className="img-info">
+
+        <div className="img-info">
             <img className="about-img" src={svg3} alt="developer" />
           </div>
+
+        <div className="img-info-container">
           <div className="para-container">
             <strong>Delevoper</strong>
             <p>
