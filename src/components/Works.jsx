@@ -1,17 +1,16 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Wrapper from "../assets/Wrappers/Works";
-import projectz from "../utils/index";
-import { FiGithub, FiLink2 } from "react-icons/fi";
-import Mobile from "./Mobile"
-import Desktop from "./Desktop"
+import Mobile from "./Mobile";
+import Desktop from "./Desktop";
 
-const Works = () => {
+const Works =  forwardRef((props, Pref) => {
   return (
-    <Wrapper>
-      <Mobile  />
+    <Wrapper ref={Pref}>
+      <Mobile />
       <Desktop />
     </Wrapper>
   );
-};
+});
 
+// export default forwardRef(Works);
 export default Works;

@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Wrapper from "../assets/Wrappers/About";
 import svg3 from "/img/svg-3.svg";
 
-const About = () => {
+const About =  forwardRef((props, ref) => {
   return (
-    <Wrapper >
+    <Wrapper ref={ref}>
       {/* mobile */}
       <div className="mobile-container">
         <div className="heading-container">
@@ -31,12 +31,12 @@ const About = () => {
       {/* Desktop */}
       <div className="desktop-container">
         <div className="about-info-container">
-        <div className="heading-container">
-          <h2>What I do</h2>
-          <span className="desktop-heading-underline" ></span>
-        </div>
+          <div className="heading-container">
+            <h2>What I do</h2>
+            <span className="desktop-heading-underline"></span>
+          </div>
           <div className="span">
-            <strong>  Delevoper</strong>
+            <strong> Delevoper</strong>
             <p>
               I develop beautiful and powerful websites for modern businesses.
               Any business today needs a website that wins customers’ trust and
@@ -51,6 +51,7 @@ const About = () => {
       </div>
     </Wrapper>
   );
-};
+});
 
 export default About;
+// export default forwardRef(About);

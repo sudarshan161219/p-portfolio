@@ -55,11 +55,6 @@ const Wrapper = styled.section`
     justify-content: center;
   }
 
-  p {
-    line-height: 1.1rem;
-    line-height: normal;
-  }
-
   .desktop-container {
     display: none;
   }
@@ -83,7 +78,6 @@ const Wrapper = styled.section`
     strong,
     p {
       text-align: left;
-      line-height: 180%;
     }
 
     .about-info-container > h2 {

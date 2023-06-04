@@ -3,15 +3,13 @@ import Wrapper from "../assets/Wrappers/Navbar";
 import logo from "/img/logo.png";
 import Sidebar from "./Sidebar";
 
-const Navbar = ({ scrollToSection }) => {
+const Navbar = ({ home, about, contact, project }) => {
   return (
     <Wrapper>
       <div className="img-container">
         <img className="logo-img" src={logo} alt="logo" />
       </div>
-      <Sidebar
-        scrollToSection={scrollToSection}
-      />
+      <Sidebar home={home} about={about} contact={contact} project={project} />
     </Wrapper>
   );
 };

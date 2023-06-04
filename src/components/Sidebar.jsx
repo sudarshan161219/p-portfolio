@@ -1,19 +1,27 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import Wrapper from "../assets/Wrappers/Sidebar";
-import { Link } from "react-router-dom";
-import Contact from "./Contact";
-const Sidebar = ({ scrollToSection}) => {
-  const home = useRef(null)
-  const about = useRef(null)
-  const project = useRef(null)
-  const contact = useRef(null)
+
+
+
+const Sidebar = ({ home, about, contact, project}) => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
     setClick(!click);
+
   };
+
+  const scrollToSection = (elementRef) =>{
+    // window.scrollTo({
+    // top: elementRef.current.offsetTop,
+    // behavior:'smooth'
+    // })
+    elementRef.current?.scrollIntoView({behavior: 'smooth' });
+    setClick(!click);
+
+  }
   return (
     <Wrapper>
       <div className={click ? "menu-btn rotate" : "menu-btn"}>
@@ -22,25 +30,18 @@ const Sidebar = ({ scrollToSection}) => {
       </div>
       <div className={click ? "sidebar open-sidebar" : "sidebar"}>
         <ul className="list">
-          <li onClick={handleClick}>
-            <a href="#" onClick={() => scrollToSection(home)}>
+          <li onClick={() =>  scrollToSection(home)}>
               Home
-            </a>
           </li>
-          <li onClick={handleClick}>
-            <a href="#" onClick={() => scrollToSection(about)}>
+          <li onClick={() => scrollToSection(about)}>
               About
-            </a>
           </li>
-          <li onClick={handleClick}>
-            <a href="#" onClick={() => scrollToSection(project)}>
+          <li onClick={() => scrollToSection(project)}>
+
               Projects
-            </a>
           </li>
-          <li onClick={handleClick}>
-            <a href="#" onClick={() => scrollToSection(contact)}>
+          <li onClick={() => scrollToSection(contact)}>
               Contact
-            </a>
           </li>
         </ul>
       </div>

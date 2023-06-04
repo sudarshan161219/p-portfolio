@@ -1,10 +1,9 @@
-import React from 'react'
-import Wrapper from '../assets/Wrappers/Contact'
+import React, { forwardRef } from "react";
+import Wrapper from "../assets/Wrappers/Contact";
 
-const Contact = () => {
-  return (
-    <Wrapper>Contact</Wrapper>
-  )
-}
+const Contact = forwardRef((props, ref) => {
+  return <Wrapper ref={ref}>Contact</Wrapper>;
+});
 
-export default Contact
+// export default forwardRef(Contact);
+export default Contact;

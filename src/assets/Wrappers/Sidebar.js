@@ -43,7 +43,7 @@ const Wrapper = styled.div`
   }
   .list li {
   }
-  .list li a {
+  .list li  {
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
@@ -52,16 +52,17 @@ const Wrapper = styled.div`
     opacity: 0;
     transition: all 0.3s ease;
     transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    cursor:pointer;
   }
 
-  .list li a:hover:after {
+  .list li:hover:after {
     transform: scaleY(1);
   }
-  .list li a:hover {
+  .list li:hover {
     color: #1a73e8;
   }
 
-  .list li a {
+  .list li  {
     opacity: 1;
   }
 
