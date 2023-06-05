@@ -5,7 +5,7 @@ const Wrapper = styled.div`
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     border-radius: 100%;
     bottom: 10px;
     right: 10px;
@@ -17,14 +17,18 @@ const Wrapper = styled.div`
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    transform: translateX(200%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   }
 
-  .up-icon{
+  .up-icon {
     font-size: 1.3rem;
   }
 
-  .hide{
-    display: none;
+  .show {
+    transform: translateX(0%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   }
 `;
 

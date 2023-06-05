@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Wrapper from "../assets/Wrappers/ScrolltoTopBtn";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
@@ -25,11 +25,12 @@ const ScrolltoTopBtn = () => {
 
   return (
     <Wrapper>
-      {scrolly && (
-        <div onClick={scrollToTop} className={"up-container"}>
-          <AiOutlineArrowUp className="up-icon" />
-        </div>
-       )} 
+      <div
+        onClick={scrollToTop}
+        className={scrolly ? "up-container show" : "up-container"}
+      >
+        <AiOutlineArrowUp className="up-icon" />
+      </div>
     </Wrapper>
   );
 };

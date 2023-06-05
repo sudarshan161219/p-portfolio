@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gudea:wght@700&family=Oswald:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gudea:wght@700&family=Oswald:wght@500;600&family=Source+Sans+Pro:wght@400;600&display=swap");
   * {
     margin: 0;
     padding: 0;
@@ -40,11 +40,11 @@ const Wrapper = styled.div`
     justify-content: center;
     list-style: none;
     text-align: center;
-    gap:5rem;
+    gap: 5rem;
   }
   .list li {
   }
-  .list li  {
+  .list li {
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
@@ -53,7 +53,7 @@ const Wrapper = styled.div`
     opacity: 0;
     transition: all 0.3s ease;
     transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-    cursor:pointer;
+    cursor: pointer;
   }
 
   .list li:hover:after {
@@ -63,7 +63,7 @@ const Wrapper = styled.div`
     color: #1a73e8;
   }
 
-  .list li  {
+  .list li {
     opacity: 1;
   }
 
@@ -73,7 +73,7 @@ const Wrapper = styled.div`
   }
 
   .menu-btn {
-    position:relative;
+    position: relative;
     z-index: 1;
     display: grid;
     gap: 0.5rem;
