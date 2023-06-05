@@ -81,12 +81,12 @@ const Wrapper = styled.div`
     align-items: center;
     border-radius: 50%;
     transform: translate(0px, 0px);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   }
 
   .rotate {
     transform: translate(0px, -40px);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   }
 `;
 
