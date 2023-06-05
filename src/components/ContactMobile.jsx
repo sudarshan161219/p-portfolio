@@ -11,6 +11,10 @@ const ContactMobile = () => {
 
   return (
     <Wrapper>
+        <div className="info-container">
+            <p>If you need a modern and powerful website for your business, startup or personally, I am available for work. You can email me directly at: <br /> <span className="email-span">sudarshan@shwebdev.in</span></p>
+            <div className="span-underline" ></div>
+        </div>
       <form onSubmit={handleSubmit} className="mobile-form">
         <input placeholder="Name" className="name" type="text" name="name" />
         <input placeholder="Email" className="email" type="text" name="email" />

@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   width: 100%;
-  /* background: rgba(36, 35, 35, 0.6);
-  box-shadow: rgba(31, 38, 135, 0.37) 0px 8px 32px 0px;
-  backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 8px; */
+  margin-top: 2rem;
 
   .mobile-form {
     display: grid;
@@ -87,17 +83,32 @@ const Wrapper = styled.section`
       #cb1c8d
     );
     box-shadow: 0 4px 15px 0 rgba(88, 39, 245, 0.52);
-    animation: animateIcon 2s infinite  cubic-bezier(0.075, 0.82, 0.165, 1)  0.2s;
-;
+    animation: animateIcon 2s infinite cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
   }
-
-
 
   @keyframes animateIcon {
-   from {
+    from {
       background-position: 100% 0;
     }
+    to{
+        background-position:0 100% ;
+    }
   }
+
+  .info-container{
+    position: relative;
+  }
+
+ .span-underline{
+    position: absolute;
+    bottom: -1px;
+    left: 120px;
+    width: 50%;
+    height: 15px;
+    background: linear-gradient(90deg, rgb(81, 76, 231) 35%, rgb(30, 16, 175) 100%);
+    opacity: 0.9;
+    z-index: -1;
+ }
 
   @media (min-width: 1020px) {
     display: none;

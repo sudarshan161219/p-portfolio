@@ -44,7 +44,7 @@ const Hero = forwardRef((props, ref) => {
           <p>
             I build beautiful websites and web apps for businesses around the
             globe. If you need a modern and powerful website, send me an email.
-            If we are a good fit, <br /> I will give you a time and cost
+             <br /> I will give you a time and cost
             estimate.
           </p>
           <button
