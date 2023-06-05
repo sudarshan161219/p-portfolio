@@ -99,15 +99,10 @@ const Wrapper = styled.section`
     position: relative;
   }
 
- .span-underline{
-    position: absolute;
-    bottom: -1px;
-    left: 120px;
-    width: 50%;
-    height: 15px;
-    background: linear-gradient(90deg, rgb(81, 76, 231) 35%, rgb(30, 16, 175) 100%);
-    opacity: 0.9;
-    z-index: -1;
+ .email-span{
+    /* border-radius: 5px; */
+    padding: 0 0.3rem;
+    background: linear-gradient(90deg, #4942e4 35%, rgb(30, 16, 175) 100%);
  }
 
   @media (min-width: 1020px) {
