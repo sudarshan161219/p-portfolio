@@ -22,7 +22,7 @@ const Wrapper = styled.section`
     display: grid;
     gap: 1rem;
     text-align: left;
-    letter-spacing: 1.1px;
+    /* letter-spacing: px; */
   }
 
   .info-3d-container {
@@ -93,6 +93,14 @@ const Wrapper = styled.section`
     );
     box-shadow: 0 4px 15px 0 rgba(88, 39, 245, 0.52);
   }
+
+  @media (min-width: 768px) {
+    .info {
+    letter-spacing: 1.1px;
+  }
+
+  }
+
   @media (min-width: 1024px) {
     display: block;
     .img-info {

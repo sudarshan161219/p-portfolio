@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "../assets/Wrappers/Desktop";
 import projectz from "../utils";
-import pattern from "../../public/img/pattern.png";
+import pattern from "/img/pattern.png";
 import { FiGithub, FiLink2 } from "react-icons/fi";
 
 const Desktop = () => {

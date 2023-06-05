@@ -5,6 +5,7 @@ const Wrapper = styled.section`
   display: grid;
   align-content: start;
   gap: 2rem;
+  margin-bottom:5rem;
 `;
 
 export default Wrapper;

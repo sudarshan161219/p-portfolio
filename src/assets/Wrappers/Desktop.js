@@ -62,11 +62,6 @@ const Wrapper = styled.section`
     bottom: -20px;
   }
 
-  /* .stack-container {
-    border-top: #eeeeee 1px solid;
-    width: 100%;
-    padding: 1rem 0 0 0;
-  } */
 
   .stack-container > span{
     font-size: 1.3rem;
