@@ -1,18 +1,6 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /* height: 100vh; */
-  color: #eeeeee;
-  background-size: cover;
-  scroll-snap-type: mandatory;
-  scroll-behavior: smooth;
-  overflow-y: auto;
-  scrollbar-width: none;
-  position: relative;
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   .up-container {
     position: fixed;
     display: flex;
@@ -37,16 +25,6 @@ const Wrapper = styled.div`
 
   .hide{
     display: none;
-  }
-
-  @media (min-width: 1024px) {
-    width: 950px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 1360px) {
-    width: 1200px;
-    margin: 0 auto;
   }
 `;
 

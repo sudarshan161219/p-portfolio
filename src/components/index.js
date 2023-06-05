@@ -3,5 +3,5 @@ import Hero from "./Hero";
 import About from "./About";
 import Works from "./Works"
 import Contact from "./Contact";
-
-export {Navbar, Hero, About, Works, Contact }
+import ScrolltoTopBtn from "./ScrolltoTopBtn";
+export {Navbar, Hero, About, Works, Contact, ScrolltoTopBtn }
