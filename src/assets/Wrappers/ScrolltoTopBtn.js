@@ -18,6 +18,7 @@ const Wrapper = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.18);
     transition: all 0.6s ease-in-out;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transform: translateX(200%);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   }
