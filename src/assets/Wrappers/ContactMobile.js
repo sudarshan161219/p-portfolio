@@ -3,11 +3,21 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   width: 100%;
   margin-top: 2rem;
-
+  background-image: url("/img/blob.svg");
+  background-repeat: no-repeat;
+  background-position: 144px 123px;
+  position: relative;
   .mobile-form {
+    margin-top: 2rem;
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    background: rgba(36, 35, 35, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
   }
 
   .mobile-form > input {
@@ -15,8 +25,8 @@ const Wrapper = styled.section`
     letter-spacing: 1.1px;
     line-height: normal;
     background-color: inherit;
-    /* outline: none; */
-    /* border: none; */
+    outline: none;
+    border: none;
     /* border-bottom: 0.5px solid #d6d6d6; */
     padding: 0.5rem;
     color: #d6d6d6;
@@ -31,8 +41,8 @@ const Wrapper = styled.section`
     color: #d6d6d6;
     resize: vertical;
     background-color: inherit;
-    /* outline: none;
-    border: none; */
+    outline: none;
+    border: none;
     font-size: 1.5rem;
   }
 
@@ -48,8 +58,6 @@ const Wrapper = styled.section`
     letter-spacing: 1px;
     font-family: "Titillium Web", sans-serif;
     color: #fff;
-    margin-top: 0.7rem;
-    /* height: 40px; */
     text-align: center;
     border: none;
     background-size: 300% 100%;
@@ -90,20 +98,35 @@ const Wrapper = styled.section`
     from {
       background-position: 100% 0;
     }
-    to{
-        background-position:0 100% ;
-    }
   }
 
-  .info-container{
+  .info-container {
     position: relative;
   }
 
- .email-span{
-    /* border-radius: 5px; */
+  .email-span {
     padding: 0 0.3rem;
     background: linear-gradient(90deg, #4942e4 35%, rgb(30, 16, 175) 100%);
- }
+  }
+
+  .blob-container {
+    position: absolute;
+    bottom: -50px;
+    right: -200px;
+    left: 0;
+    z-index: -10;
+  }
+
+  .blob {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .blob1 {
+    filter: blur(50px);
+  }
 
   @media (min-width: 1020px) {
     display: none;
