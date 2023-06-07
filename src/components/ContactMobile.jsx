@@ -44,8 +44,6 @@ const ContactMobile = () => {
             setTimeout(() => {
               setsuccess(true);
             }, 1000);
-
-            // setsuccess(true);
           },
           (error) => {
             console.log(error.text);
@@ -67,6 +65,7 @@ const ContactMobile = () => {
     <Wrapper>
       <Toaster position="top-center" reverseOrder={false} />
       <div className="info-container">
+        {/* <h2>Get In Touch</h2> */}
         <p>
           If you need a modern and powerful website for your business, startup
           or personally, I am available for work. You can email me directly at:{" "}

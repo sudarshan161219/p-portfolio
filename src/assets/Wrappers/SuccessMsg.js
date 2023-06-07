@@ -17,6 +17,11 @@ const Wrapper = styled.section`
     font-size: 2rem;
     text-align: center;
   }
+
+  @media (min-width: 1020px) {
+    height: 450px;
+    width: 340px;
+  }
 `;
 
 export default Wrapper;

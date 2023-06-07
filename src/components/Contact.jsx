@@ -7,6 +7,7 @@ const Contact = forwardRef((props, ref) => {
   return (
     <Wrapper ref={ref}>
       <h2>Get In Touch</h2>
+
       {/* Mobile */}
       <ContactMobile />
       {/* Desktop */}

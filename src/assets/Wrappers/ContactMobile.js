@@ -104,11 +104,6 @@ const Wrapper = styled.section`
     position: relative;
   }
 
-  .email-span {
-    padding: 0 0.3rem;
-    background: linear-gradient(90deg, #4942e4 35%, rgb(30, 16, 175) 100%);
-  }
-
   .blob-container {
     position: absolute;
     bottom: -50px;
