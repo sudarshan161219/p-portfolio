@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   height: 30px;
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
-  /* z-index:10; */
+  z-index:10;
   .sidebar {
     position: fixed;
     top: 0;

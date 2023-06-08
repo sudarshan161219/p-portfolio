@@ -6,7 +6,10 @@ import Wrapper from "../assets/Wrappers/Contact";
 const Contact = forwardRef((props, ref) => {
   return (
     <Wrapper ref={ref}>
-      <h2>Get In Touch</h2>
+<div className="heading-container">
+<h2>Get In Touch</h2>
+<div className="heading-underline" ></div>
+</div>
 
       {/* Mobile */}
       <ContactMobile />
