@@ -5,11 +5,27 @@ const Wrapper = styled.section`
 
   @media (min-width: 1024px) {
     display: block;
-    .desktop-heading{
+    .desktop-heading {
+      position: relative;
       display: flex;
       margin-bottom: 5rem;
       width: 100%;
+    }
 
+    .heading-underline {
+      position: absolute;
+      top: 25px;
+      left: 35px;
+      width: 120px;
+      height: 25px;
+      background: rgb(81, 76, 231);
+      background: linear-gradient(
+        90deg,
+        rgba(81, 76, 231, 1) 35%,
+        rgba(30, 16, 175, 1) 100%
+      );
+      opacity: 0.9;
+      z-index: -1;
     }
     .desktop-works-projects-info-container {
       width: 100%;
@@ -62,8 +78,7 @@ const Wrapper = styled.section`
     bottom: -20px;
   }
 
-
-  .stack-container > span{
+  .stack-container > span {
     font-size: 1.3rem;
     color: #eeeeee;
   }
@@ -73,7 +88,7 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
   }
 
   .tech-img {
@@ -226,6 +241,7 @@ const Wrapper = styled.section`
   .button:hover .button_lg::after {
     background-color: #fff;
   }
+
   @media (min-width: 1360px) {
     .project-info {
       width: 600px;

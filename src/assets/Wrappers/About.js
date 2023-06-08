@@ -46,7 +46,7 @@ const Wrapper = styled.section`
 
   @keyframes animate {
     to {
-      transform: translateY(25px);
+      transform: translateY(20px);
     }
   }
 

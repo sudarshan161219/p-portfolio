@@ -9,6 +9,7 @@ const Desktop = () => {
     <Wrapper>
       <div className="desktop-heading">
         <h2>Projects</h2>
+        <div className="heading-underline" ></div>
       </div>
       <div className="desktop-works-projects-info-container">
         {projectz.map((item) => (

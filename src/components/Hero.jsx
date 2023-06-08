@@ -35,17 +35,15 @@ const Hero = forwardRef((props, ref) => {
       <div className="info-3d-container">
         <div className="info">
           <h1>
-            Hi, I am{" "}
-            <span onMouseOver={handleEvent} data-value="Sudarshan">
-              Sudarshan
+            Hi, I am   Sudarshan,<br />
+            Web{" "}<span onMouseOver={handleEvent} data-value="Developer">
+               Developer
             </span>
-            , <br /> Web Developer
           </h1>
           <p>
             I build beautiful websites and web apps for businesses around the
             globe. If you need a modern and powerful website, send me an email.
-             <br /> I will give you a time and cost
-            estimate.
+            <br /> I will give you a time and cost estimate.
           </p>
           <button
             className="bn632-hover bn22"
@@ -53,6 +51,8 @@ const Hero = forwardRef((props, ref) => {
           >
             Get In Touch
           </button>
+          <div className="first-underline" ></div>
+          <div className="sec-underline" ></div>
         </div>
         <div className="img-info">
           <img className="hero-img" src={svg1} alt="moon" />
