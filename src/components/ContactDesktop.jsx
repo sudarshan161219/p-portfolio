@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import Wrapper from "../assets/Wrappers/ContactDesktop";
 import emailjs from "@emailjs/browser";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import { SuccessMsg } from "../components";
 import svgContact from "/img/Contact-us.svg";
 const ContactDesktop = () => {
@@ -31,14 +31,7 @@ const ContactDesktop = () => {
         .then(
           (result) => {
             setLoading(false);
-            toast("Thank you for getting in touch!", {
-              icon: "👏",
-              style: {
-                borderRadius: "10px",
-                background: "#333",
-                color: "#fff",
-              },
-            });
+            toast.success("Thank you for getting in touch!");
             console.log(result.text);
             e.target.reset();
             setTimeout(() => {
@@ -59,8 +52,6 @@ const ContactDesktop = () => {
 
   return (
     <Wrapper>
-      <Toaster position="top-center" reverseOrder={false} />
-
       <div className="info-container">
         <h3>Simply leave a message</h3>
         <p>

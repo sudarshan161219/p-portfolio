@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import Wrapper from "../assets/Wrappers/ContactMobile";
-import { AiOutlineSend } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import { Toaster, toast } from "react-hot-toast";
+import { toast } from "react-hot-toast";
 import { SuccessMsg } from "../components";
 const ContactMobile = () => {
   const [loading, setLoading] = useState(false);
@@ -31,14 +30,7 @@ const ContactMobile = () => {
         .then(
           (result) => {
             setLoading(false);
-            toast("Thank you for getting in touch!", {
-              icon: "👏",
-              style: {
-                borderRadius: "10px",
-                background: "#333",
-                color: "#fff",
-              },
-            });
+            toast.success("Thank you for getting in touch!");
             console.log(result.text);
             e.target.reset();
             setTimeout(() => {
@@ -63,46 +55,44 @@ const ContactMobile = () => {
 
   return (
     <Wrapper>
-      <Toaster position="top-center" reverseOrder={false} />
       <div className="info-container">
-        {/* <h2>Get In Touch</h2> */}
         <p>
           If you need a modern and powerful website for your business, startup
           or personally, I am available for work. You can email me directly at:{" "}
           <br /> <span className="email-span">sudarshan@shwebdev.in</span>
         </p>
       </div>
-        <form ref={form} onSubmit={sendEmail} className="mobile-form">
-          <input
-            placeholder="Name"
-            className="name"
-            type="text"
-            name="user_name"
-          />
-          <input
-            placeholder="Email"
-            className="email"
-            type="email"
-            name="user_email"
-          />
-          <input
-            placeholder="Subject"
-            className="subject"
-            type="text"
-            name="user_subject"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="mobile-text-area"
-            name="message"
-            id="mobile-text-area"
-            cols="30"
-            rows="10"
-          ></textarea>
-          <button className="send-btn" type="submit" value="Send">
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+      <form ref={form} onSubmit={sendEmail} className="mobile-form">
+        <input
+          placeholder="Name"
+          className="name"
+          type="text"
+          name="user_name"
+        />
+        <input
+          placeholder="Email"
+          className="email"
+          type="email"
+          name="user_email"
+        />
+        <input
+          placeholder="Subject"
+          className="subject"
+          type="text"
+          name="user_subject"
+        />
+        <textarea
+          placeholder="Your Message"
+          className="mobile-text-area"
+          name="message"
+          id="mobile-text-area"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button className="send-btn" type="submit" value="Send">
+          {loading ? "Sending..." : "Send"}
+        </button>
+      </form>
     </Wrapper>
   );
 };
